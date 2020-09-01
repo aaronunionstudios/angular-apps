@@ -1,0 +1,7 @@
+<h3>Video List</h3>
+<div *ngFor="let video of videos; index as i">
+    <div class="container" style="border:1px solid green;margin-bottom:10px;padding:10px;">
+      <p>Title: <b>{{ video.title }}</b></p>
+      <p>Author: <b>{{ video.author }}</b></p>
+    </div>
+</div>
