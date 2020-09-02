@@ -8,11 +8,17 @@ import { videoData } from '../video-data';
 })
 export class VideoListComponent implements OnInit {
 
+  selectedVideo;
+
   videos = videoData;
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  selectVideo(video) {
+    this.selectedVideo = video;
+    console.log('video', video);
   }
 
 }

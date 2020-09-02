@@ -1,5 +1,8 @@
 <h3>Video List</h3>
-<div *ngFor="let video of videos; index as i">
+<div *ngFor="let video of videos; index as i"
+[class.video-selected]="video === selectedVideo"
+(click)="selectVideo(video)"
+>
     <div class="container" style="border:1px solid green;margin-bottom:10px;padding:10px;">
       <p>{{ i + 1 }}</p>
       <p>Title: <b>{{ video.title }}</b></p>
