@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { videoData } from '../video-data';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-video-list',
@@ -10,7 +9,7 @@ export class VideoListComponent implements OnInit {
 
   selectedVideo;
 
-  videos = videoData;
+  @Input() videos;
 
   constructor() { }
 
