@@ -7,8 +7,11 @@ import { StatFiltersComponent } from './stat-filters/stat-filters.component';
 import { RouterModule, Routes} from '@angular/router';
 import { VideoListItemComponent } from './video-list-item/video-list-item.component';
 
-const routes: Routes = [
-  {path: '', component: VideoDashboardComponent}
+let routes: Routes = [
+  {
+    path: '',
+    component: VideoDashboardComponent,
+  },
 ];
 
 @NgModule({
